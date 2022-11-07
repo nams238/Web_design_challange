@@ -19,3 +19,64 @@ integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbs
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Latitude</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+          <span class=“navbar-toggler-icon”></span>
+        </button>
+        <div class=“collapse navbar-collapse” id=“navbarSupportedContent”>
+          <ul class=“ class="navbar-nav me-auto mb-2 mb-lg-0">>
+            <li class=“nav-item”>
+              <a class=“nav-link active” aria-current=“page” href=“./visualization/comparison.html”>Comparision</a>
+            </li>
+            <li class=“nav-item”>
+              <a class=“nav-link” href=“./visualization/csvtodata.html”>data</a>
+            </li>
+            <li class=“nav-item dropdown”>
+              <a class=“nav-link dropdown-toggle” href=“#” role=“button” data-bs-toggle=“dropdown” aria-expanded=“false”>
+                Plot
+              </a>
+              <ul class=“dropdown-menu”>
+                <li><a class=“dropdown-item” href=“./visualization/lat-vs-cloudness.html”>Cloudness</a></li>
+                <li><a class=“dropdown-item” href=“./visualization/lat-vs-humidity.html”>Humidity</a></li>
+                <li><a class=“dropdown-item” href=“./visualization/lat-vs-max_temp.html”>Max Temperature</a></li>
+                <li><a class=“dropdown-item” href=“./visualization/lat-vs-windspeed.html”>Wind Speed</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+      <h1>Summary: Latitude versus x.</h1>
+      <br>
+      <br>
+          <img src=“./Resources/assets/images/lat-vs-max_temp.png” class=“responsive img-thumbnail” alt=“responsive images”>
+              <p>
+                  The objective of this project was to analyze how weather changes as
+                  you get closer to the equator. To achieve this analysis, weather data
+                  were requested from the OpenWeatherMap using the OpenWeatherMap API key to
+                  call and assemble a dataset on over 500 cities.
+                  These data were processed using Pandas and Matplotlib was used to plot the various
+                  aspects of the weather vis-a-vis the latitude. The elements under focus are,temperature,
+                  cloudiness, wind speed, and humidity. This site provides the source data and visualizations
+                  created as part of the analysis, as well as explanations and descriptions
+                  of any trends and correlations witnessed.
+              </p>
+              <div class=“vis”>
+              <h2>Visualizations</h2>
+              <p class=“intro”> Click on any of the plots to get an in-depth analysis.</p>
+              </div>
+                  <a href=“./visualization/lat-vs-max_temp.html”>
+                      <img src=“./Resources/assets/images/lat-vs-max_temp.png” target=“_blank” class=“responsive img-thumbnail” alt=“lat-vs-max_temp”>
+                  </a>
+                  <a href=“./visualization/lat-vs-windspeed.html”>
+                      <img src=“./Resources/assets/images/lat-vs-wind_speed.png” target=“_blank” class=“responsive img-thumbnail” alt=“lat-vs-humidity”>
+                  </a>
+                  <a href=“./visualization/lat-vs-humidity.html”>
+                      <img src=“./Resources/assets/images/lat-vs-humidity.png” target=“_blank” class=“responsive img-thumbnail” alt=“lat-vs-cloudiness”>
+                  </a>
+                  <a href=“./visualization/lat-vs-cloudness.html”>
+                      <img src=“./Resources/assets/images/lat-vs-cloudiness.png” target=“_blank” class=“responsive img-thumbnail” alt=“lat-vs-windspeed”>
+                  </a>
+                  <form>
+                    <input type="button" value="Go back!" onclick="history.go(-1)">
+                  </form>
+</body>
+</html>
